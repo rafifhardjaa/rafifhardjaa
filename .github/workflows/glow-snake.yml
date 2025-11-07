@@ -1,15 +1,15 @@
-name: Generate Glowing Snake 🐍
+name: Generate Snake 🐍 (Glow Edition)
 
 on:
   schedule:
-    - cron: "0 */12 * * *" # tiap 12 jam
+    - cron: "0 */12 * * *"
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repo
         uses: actions/checkout@v4
 
       - name: Generate snake animation
@@ -20,22 +20,7 @@ jobs:
           color_snake: "#FFFFFF"
           color_dots: "#00FF00"
           background: "#000000"
-
-      - name: Inject glow filter ke SVG
-        run: |
-          sed -i '1i\
-<svg xmlns="http://www.w3.org/2000/svg">\
-  <defs>\
-    <filter id="glow">\
-      <feGaussianBlur stdDeviation="3.5" result="coloredBlur"/>\
-      <feMerge>\
-        <feMergeNode in="coloredBlur"/>\
-        <feMergeNode in="SourceGraphic"/>\
-      </feMerge>\
-    </filter>\
-  </defs>\
-' dist/snake-glow.svg
-          sed -i 's/<path /<path filter="url(#glow)" /g' dist/snake-glow.svg
+          palette: "github-dark"
 
       - name: Upload snake to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4
