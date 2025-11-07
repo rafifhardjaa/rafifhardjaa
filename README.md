@@ -36,7 +36,7 @@
 ### 🐍 Crazy Snake
 ![snake gif](https://github.com/rafifhardjaa/rafifhardjaa/blob/output/github-contribution-grid-snake.svg)
 
-![error-rage](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmZodG5tZWR4dmFjN3B6Z2E1ZmlvOWdtNnRrZ3o3Mnh1bW9pa2FvMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/26n6xBpxNXExDfuKc/giphy.gif)
+![person](https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif)
 
 
 
