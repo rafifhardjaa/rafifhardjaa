@@ -48,9 +48,8 @@
 ---
 
 ### 🐍 Crazy Snake
-<p align="center">
-  <img src="https://raw.githubusercontent.com/rafifhardjaa/rafifhardjaa/output/snake-glow.svg" alt="snake animation" style="filter: drop-shadow(0 0 10px #00ff00);" />
-</p>
+![GitHub Snake Light](https://raw.githubusercontent.com/LazyCodix/LazyCodix/output/snake.svg)
+
 
 
 <p align="center">
