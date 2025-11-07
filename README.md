@@ -13,7 +13,7 @@
 
 ---
 
-### ⚡ Stack yang sering gua paksain bisa
+### ⚡ Stack yang sering dipaksain bisa
 ![HTML](https://img.shields.io/badge/-HTML-orange?style=flat-square&logo=html5)
 ![CSS](https://img.shields.io/badge/-CSS-blue?style=flat-square&logo=css3)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?style=flat-square&logo=javascript)
@@ -28,13 +28,8 @@
 ---
 
 ### 📊 Statistik Biar Dibilang Produktif
-![Rafif's GitHub stats](https://github-readme-stats.vercel.app/api?username=USERNAME_LU&show_icons=true&theme=tokyonight)
+![Rafif's GitHub stats](https://github-readme-stats.vercel.app/api?username=rafifhardjaa&show_icons=true&theme=tokyonight)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rafifhardjaa&layout=compact&theme=tokyonight)
-
----
-
-### 🎮 Aktivitas Random
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00F5D4&width=435&lines=Ngoding+bukan+passion,+tapi+tobat+yang+tertunda;Gua+tau+ini+salah,+tapi+VSCode+udah+kebuka;Semangat+anjir,+error+itu+seni!)
 
 ---
 
