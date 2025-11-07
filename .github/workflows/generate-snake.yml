@@ -12,22 +12,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          persist-credentials: true
 
-      - name: Generate Snake SVG
-        uses: Platane/snk@v3
+      - name: Generate Snake Game
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: rafifhardjaa
           outputs: dist/github-contribution-grid-snake.svg
 
-      - name: Commit generated snake to branch 'output'
-        uses: EndBug/add-and-commit@v9
+      - name: Push Snake to output branch
+        uses: crazy-max/ghaction-github-pages@v3
         with:
-          author_name: github-actions
-          author_email: github-actions@github.com
-          message: "chore: update snake"
-          add: "dist/*"
-          branch: output
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
