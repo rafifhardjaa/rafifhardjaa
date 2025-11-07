@@ -48,7 +48,7 @@
 ---
 
 ### 🐍 Crazy Snake
-![GitHub Snake Light](https://raw.githubusercontent.com/LazyCodix/LazyCodix/output/snake.svg)
+![GitHub Snake Light](https://raw.githubusercontent.com/rafifhardjaa/rafifhardjaa/output/snake.svg)
 
 
 
