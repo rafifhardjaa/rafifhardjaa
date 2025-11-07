@@ -1,29 +1,25 @@
-name: Generate Snake 🐍 (Glow Edition)
+name: generate snake
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 0 * * *" # jalan tiap tengah malam
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v3
 
       - name: Generate snake animation
-        uses: Platane/snk@v3
+        uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: rafifhardjaa
-          outputs: dist/snake-glow.svg
-          color_snake: "#FFFFFF"
-          color_dots: "#00FF00"
-          background: "#000000"
-          palette: "github-dark"
+          github_user_name: rafifhardjaa # ganti sama username lu
+          outputs: dist/snake.svg
 
-      - name: Upload snake to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v4
+      - name: Push snake animation to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
