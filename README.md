@@ -29,7 +29,7 @@
 
 ### 📊 Statistik Biar Dibilang Produktif
 ![Rafif's GitHub stats](https://github-readme-stats.vercel.app/api?username=USERNAME_LU&show_icons=true&theme=tokyonight)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=USERNAME_LU&layout=compact&theme=tokyonight)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rafifhardjaa&layout=compact&theme=tokyonight)
 
 ---
 
@@ -39,7 +39,7 @@
 ---
 
 ### 🐍 Ular Gila Pemakan Commit
-![snake gif](https://github.com/USERNAME_LU/USERNAME_LU/blob/output/github-contribution-grid-snake.svg)
+![snake gif](https://github.com/rafifhardjaa/rafifhardjaa/blob/output/github-contribution-grid-snake.svg)
 
 ---
 
