@@ -33,13 +33,9 @@
 
 ---
 
-### 🐍 Ular Gila Pemakan Commit
+### 🐍 Crazy Snake
 ![snake gif](https://github.com/rafifhardjaa/rafifhardjaa/blob/output/github-contribution-grid-snake.svg)
+![chill-coding](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGU2bG1pYmJraHB4aHBubmgycXRuZWRxa2x0OXc5ejVkZjU3eHRscSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3oEjI6SIIHBdRxXI40/giphy.gif)
 
----
-
-<p align="center">
-  <img src="https://media.giphy.com/media/3ohc0VJYbU2m9aD8MM/giphy.gif" width="200">
-</p>
 
 <p align="center">“Satu-satunya hal yang stabil di hidup gua ya bug ini.”</p>
