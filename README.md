@@ -35,7 +35,9 @@
 
 ### 🐍 Crazy Snake
 ![snake gif](https://github.com/rafifhardjaa/rafifhardjaa/blob/output/github-contribution-grid-snake.svg)
-![chill-coding](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGU2bG1pYmJraHB4aHBubmgycXRuZWRxa2x0OXc5ejVkZjU3eHRscSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3oEjI6SIIHBdRxXI40/giphy.gif)
+
+![coding-night](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXBtZXRyZjJrOWFtb3R3NGdzcGpzb2h2d3U3cHF6OHZqZXRhZm1vdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/VTtANKl0beDFQRLDTh/giphy.gif)
+
 
 
 <p align="center">“Satu-satunya hal yang stabil di hidup gua ya bug ini.”</p>
