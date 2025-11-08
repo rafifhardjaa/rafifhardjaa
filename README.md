@@ -7,11 +7,11 @@
 
 ### 😎 My Tentang Gua
 
-![Code](https://img.shields.io/badge/Ngoding%20karena%20FOMO-000?style=for-the-badge&logo=neovim&logoColor=blue)
+![Code](https://img.shields.io/badge/Ngoding%20karena%20FOMO-313647?style=for-the-badge&logo=neovim&logoColor=blue)
 ![Coffee](https://img.shields.io/badge/Americano%202%20Shoot%20Enjoyer-6f4e37?style=for-the-badge&logo=buymeacoffee&logoColor=white)
 ![Brain](https://img.shields.io/badge/Error%3F%20Pantau%20Stack%20Overflow-f48024?style=for-the-badge&logo=stackoverflow&logoColor=white)
 ![Spotify](https://img.shields.io/badge/Coding%20W%20Spotify-1DB954?style=for-the-badge&logo=spotify&logoColor=white)
-![Linux](https://img.shields.io/badge/Zorin%20OS-1793d1?style=for-the-badge&logo=zorin&logoColor=white)
+![Linux](https://img.shields.io/badge/Ubuntu%20OS-FAA533?style=for-the-badge&logo=ubuntu&logoColor=white)
 
 
 ---
@@ -32,7 +32,6 @@
 ### 🛠️ Tools
 ![Zorin OS](https://img.shields.io/badge/-Zorin%20OS-0CC1F3?style=flat-square&logo=zorin&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![VSCode](https://img.shields.io/badge/-VSCode-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
 ![Neovim](https://img.shields.io/badge/-Neovim-57A143?style=flat-square&logo=neovim&logoColor=white)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
