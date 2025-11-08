@@ -2,15 +2,6 @@
 
 <h2 align="center">hallo i'm Rafif 👋</h2>
 <p align="center">Mahasiswa Informatika | Ngoding cuma fomo</p>
-<p>
-   ▗▖▗▞▀▜▌▄▄▄▄▄ ▄   ▄ ▗▞▀▘ ▄▄▄     ▐▌▄ ▄   ▄ 
-▐▌▝▚▄▟▌ ▄▄▄▀ █   █ ▝▚▄▖█   █    ▐▌▄  ▀▄▀  
-▐▌     █▄▄▄▄  ▀▀▀█     ▀▄▄▄▀ ▗▞▀▜▌█ ▄▀ ▀▄ 
-▐▙▄▄▖        ▄   █           ▝▚▄▟▌█       
-              ▀▀▀                         
-                                          
-                                          
-</p>
 
 ---
 
