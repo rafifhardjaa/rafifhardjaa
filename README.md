@@ -7,7 +7,7 @@
 
 ### 😎 My Tentang Gua
 
-![Code](https://img.shields.io/badge/Ngoding%20karena%20FOMO-000?style=for-the-badge&logo=visualstudiocode&logoColor=blue)
+![Code](https://img.shields.io/badge/Ngoding%20karena%20FOMO-000?style=for-the-badge&logo=neovim&logoColor=blue)
 ![Coffee](https://img.shields.io/badge/Americano%202%20Shoot%20Enjoyer-6f4e37?style=for-the-badge&logo=buymeacoffee&logoColor=white)
 ![Brain](https://img.shields.io/badge/Error%3F%20Pantau%20Stack%20Overflow-f48024?style=for-the-badge&logo=stackoverflow&logoColor=white)
 ![Spotify](https://img.shields.io/badge/Coding%20W%20Spotify-1DB954?style=for-the-badge&logo=spotify&logoColor=white)
