@@ -23,6 +23,8 @@
 ![Node.js](https://img.shields.io/badge/-Node.js-5FA04E?style=flat-square&logo=node.js&logoColor=white)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Tailwind](https://img.shields.io/badge/-TailwindCSS-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/-Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
+
 
 ### 🛠️ Tools
 ![Zorin OS](https://img.shields.io/badge/-Zorin_OS-2F4F4F?style=flat-square&logo=linux&logoColor=white)
