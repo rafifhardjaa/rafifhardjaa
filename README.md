@@ -46,10 +46,6 @@
 
 ---
 
-### 📊 Statistik Biar Keliatan Produktif
-![Rafif's GitHub stats](https://github-readme-stats.vercel.app/api?username=rafifhardjaa&show_icons=true&theme=tokyonight)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=rafifhardjaa&layout=compact&theme=tokyonight)
-
 ---
 
 
