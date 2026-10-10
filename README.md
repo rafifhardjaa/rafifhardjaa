@@ -1,212 +1,468 @@
 <div align="center">
+
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=13&duration=3500&pause=1000&color=58A6FF&center=true&vCenter=true&width=600&lines=TypeScript+%7C+React+%7C+Next.js+%7C+ElysiaJS+%7C+Bun;Building+web+products+end-to-end;Currently+shipping+TeaMusic+%E2%86%92+teamusic.my.id;Open+to+interesting+problems+%26+collaborations" alt="typing" />
+
 </div>
 
 <br/>
 
 <table>
+
 <tr>
+
 <td valign="top" width="36%">
 
-```
- ██████╗  █████╗ ██████╗      ██╗ █████╗
- ██╔══██╗██╔══██╗██╔══██╗     ██║██╔══██╗
- ██████╔╝███████║██║  ██║     ██║███████║
- ██╔══██╗██╔══██║██║  ██║██   ██║██╔══██║
- ██║  ██║██║  ██║██████╔╝╚█████╔╝██║  ██║
- ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚════╝ ╚═╝  ╚═╝
-```
+<div align="center">
 
-```ini
-[info]
-location = Indonesia 🇮🇩
-pronouns = he / him
-status   = open to collabs ✦
-```
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=22&duration=0&pause=0&color=58A6FF&center=true&vCenter=true&repeat=false&width=320&lines=%E2%96%88%E2%96%88+RADJA+%E2%96%88%E2%96%88" alt="RADJA" />
+
+</div>
+
+
+
+
 
 </td>
+
 <td valign="top">
 
-```properties
-rafifhardjaa@github ────────────────────────────────
+<div>
 
-OS       = macOS · Linux Mint · Android
-Role     = Full-Stack Developer
-Shell    = bun + pnpm
-Editor   = Neovim / VS Code
-Focus    = TypeScript · React · System Design · Web Perf
-Status   = Informatics Engineering Student
 
-── Now ─────────────────────────────────────────────
 
-now()    = Shipping TeaMusic → teamusic.my.id
-next()   = Next.js + Drizzle ORM + Spotify API
-open()   = true // for collabs & interesting problems
-```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OS
+
+
+
+macOS · Linux Mint · Android
+
+
+
+
+
+Role
+
+
+
+Full-Stack Developer
+
+
+
+
+
+Shell
+
+
+
+bun + pnpm
+
+
+
+
+
+Editor
+
+
+
+Neovim / VS Code
+
+
+
+
+
+Focus
+
+
+
+TypeScript · React · System Design · Web Perf
+
+
+
+
+
+Status
+
+
+
+Informatics Engineering Student
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+now()
+
+
+
+Shipping TeaMusic → teamusic.my.id
+
+
+
+
+
+next()
+
+
+
+Next.js + Drizzle ORM + Spotify API
+
+
+
+
+
+open()
+
+
+
+true — for collabs & interesting problems
+
+</div>
 
 </td>
+
 </tr>
+
 </table>
 
 <div align="center">
 
-[![Live](https://img.shields.io/badge/teamusic.my.id-■%20live-4ade80?style=flat-square&labelColor=161b22&color=4ade80)](https://teamusic.my.id)
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-161b22?style=flat-square&logo=linkedin&logoColor=58a6ff)](https://linkedin.com/in/rafifhardjaa)
-[![Twitter](https://img.shields.io/badge/-Twitter-161b22?style=flat-square&logo=twitter&logoColor=58a6ff)](https://twitter.com/rafifhardjaa)
-[![Portfolio](https://img.shields.io/badge/-Portfolio-161b22?style=flat-square&logo=vercel&logoColor=58a6ff)](https://rafifhardjaa.dev)
-[![Email](https://img.shields.io/badge/-Email-161b22?style=flat-square&logo=gmail&logoColor=58a6ff)](mailto:rafifhardja@example.com)
+
+
+
+
+
+
 <img src="https://komarev.com/ghpvc/?username=rafifhardjaa&style=flat-square&color=161b22&label=profile+views" />
 
 </div>
 
----
 
-```tsx
-// ── PROJECTS ──────────────────────────────────────────────────────
 
-interface Project {
-  url    : string
-  desc   : string
-  status : "LIVE ✓" | "BUILDING ⚡"
-  stack  : string[]
-}
+⚡ Projects
 
-const TeaMusic: Record<"v1" | "v2", Project> = {
-  v1: {
-    url    : "https://teamusic.my.id",
-    desc   : "Anonymous music messages with a note attached.",
-    status : "LIVE ✓",
-    stack  : ["React 19", "TypeScript", "ElysiaJS", "Bun",
-              "Tailwind 4", "Supabase", "Cloudflare Workers", "iTunes API"],
-  },
-  v2: {
-    url    : "https://teamusic.my.id",
-    desc   : "Rebuilt with full card export & Spotify integration.",
-    status : "BUILDING ⚡",
-    stack  : ["Next.js App Router", "Drizzle ORM", "Shadcn UI",
-              "Spotify API", "IG Story Export 9:16", "Bun"],
-  },
-}
-```
+<table>
+
+<tr>
+
+<td width="50%">
+
+
+TeaMusic
+
+
+
+Anonymous music messages with a note attached. Pick a track, write a note, share a story card. The recipient opens the link — the song plays. Your name never appears.
+
+
+
+
+
+
+
+
+
+</td>
+
+<td width="50%">
+
+
+TeaMusic v2
+
+
+
+Rebuilt with full card export, Spotify integration, and IG Story export (9:16). Clean architecture, Drizzle ORM, and Shadcn UI.
+
+
+
+
+
+
+
+</td>
+
+</tr>
+
+</table>
 
 <div align="center">
+
 <a href="https://github.com/rafifhardjaa/TeaMusic">
+
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=rafifhardjaa&repo=TeaMusic&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=e6edf3&icon_color=58a6ff&text_color=8b949e&border_radius=6" />
+
 </a>
+
 </div>
 
----
 
-```diff
-// ── STACK ─────────────────────────────────────────────────────────
 
-+ Languages   TypeScript   JavaScript   Python
-+ Frontend    React        Next.js      Tailwind CSS   Vite   Astro
-+ Backend     ElysiaJS     Bun          Node.js        Express
-+ Database    PostgreSQL   Supabase     Redis          Drizzle ORM
-+ Infra       Cloudflare   Vercel       Docker         Git
-- Learning    System Design · Clean Architecture · Core Web Vitals
-```
+🛠 Stack
 
-<div align="center">
-<img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,tailwind,vite,bun,nodejs,postgres,redis,cloudflare,vercel&theme=dark&perline=6" />
-</div>
+<table>
 
----
+<tr>
 
-```ini
-── GitHub Stats ────────────────────────────────────────────────────
-```
+<td><b>Languages</b></td>
+
+<td>
+
+
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td><b>Frontend</b></td>
+
+<td>
+
+
+
+
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td><b>Backend</b></td>
+
+<td>
+
+
+
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td><b>Database</b></td>
+
+<td>
+
+
+
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td><b>Infra</b></td>
+
+<td>
+
+
+
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td><b>Learning</b></td>
+
+<td>
+
+
+
+
+
+</td>
+
+</tr>
+
+</table>
+
+
+
+📊 GitHub Stats
 
 <div align="center">
 
 <picture>
+
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=rafifhardjaa&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true&bg_color=0d1117&title_color=e6edf3&icon_color=58a6ff&text_color=8b949e&ring_color=58a6ff" />
+
   <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=rafifhardjaa&show_icons=true&theme=default&hide_border=true&count_private=true&include_all_commits=true" />
+
   <img width="49%" src="https://github-readme-stats.vercel.app/api?username=rafifhardjaa&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true&bg_color=0d1117&title_color=e6edf3&icon_color=58a6ff&text_color=8b949e&ring_color=58a6ff" />
-</picture><picture>
+
+</picture>
+
+<picture>
+
   <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=rafifhardjaa&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=ff7b72&currStreakLabel=e6edf3&sideLabels=8b949e&dates=8b949e" />
+
   <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com?user=rafifhardjaa&theme=default&hide_border=true" />
+
   <img width="49%" src="https://streak-stats.demolab.com?user=rafifhardjaa&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=ff7b72&currStreakLabel=e6edf3&sideLabels=8b949e&dates=8b949e" />
+
 </picture>
 
 <br/>
 
 <picture>
+
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=rafifhardjaa&layout=compact&theme=github_dark&hide_border=true&langs_count=6&bg_color=0d1117&title_color=e6edf3&text_color=8b949e" />
+
   <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=rafifhardjaa&layout=compact&theme=default&hide_border=true&langs_count=6" />
+
   <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rafifhardjaa&layout=compact&theme=github_dark&hide_border=true&langs_count=6&bg_color=0d1117&title_color=e6edf3&text_color=8b949e" />
+
 </picture>
 
 </div>
 
----
 
-```gitconfig
-# ── MY JOURNEY ────────────────────────────────────────────────────
-```
 
-```sql
--- timeline: rafifhardjaa in the IT world
+🗺 My Journey
 
-SELECT year, milestone, skills_acquired
-FROM journey
-ORDER BY year ASC;
+<table>
 
-/*
-┌─────────────┬──────────────────────────────────────────────────────┐
-│    2021     │  Joined SMK Luqman Al Hakim Kudus                    │
-│             │  Major : Rekayasa Perangkat Lunak (RPL)              │
-├─────────────┼──────────────────────────────────────────────────────┤
-│  2021–2022  │  First contact with the web                          │
-│             │  Stack : HTML · CSS · JavaScript · PHP Native        │
-│             │          MySQL · Bootstrap                           │
-├─────────────┼──────────────────────────────────────────────────────┤
-│  2022–2023  │  Went deeper into backend & frameworks               │
-│             │  Stack : Laravel · MVC Architecture · REST APIs      │
-│             │          Git · Linux basics                          │
-├─────────────┼──────────────────────────────────────────────────────┤
-│  2023–2024  │  Graduated · Discovered modern frontend              │
-│             │  Stack : React · TypeScript · Tailwind CSS · Vite    │
-├─────────────┼──────────────────────────────────────────────────────┤
-│  2024–now   │  Mahasiswa Teknik Informatika                        │
-│             │  Univ. PGRI Semarang                                 │
-│             │  Stack : Next.js · Bun · ElysiaJS · Supabase         │
-│             │          Cloudflare Workers · System Design          │
-│             │  Ship  : TeaMusic → teamusic.my.id  🚀               │
-└─────────────┴──────────────────────────────────────────────────────┘
-*/
-```
+<tr>
 
-```swift
-// ── LET'S CONNECT ─────────────────────────────────────────────────
+<td width="130" align="center" valign="top">
 
-let connect = [
-    .website   : "https://rafifhardjaa.dev",
-    .live      : "https://teamusic.my.id",
-    .linkedin  : "linkedin.com/in/rafifhardjaa",
-    .twitter   : "twitter.com/rafifhardjaa",
-    .email     : "rafifhardja@example.com",
-]
 
-// Open to: freelance · collabs · interesting builds · just chatting
-```
+
+SMK Luqman<br/>Al Hakim Kudus<br/><sub>Rekayasa Perangkat Lunak</sub>
+
+</td>
+
+<td valign="top">
+
+<sub>First contact with the web — built real school projects from scratch</sub>
+
+
+
+
+
+
+
+
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="130" align="center" valign="top">
+
+
+
+Transition<br/><sub>Self-taught modern frontend</sub>
+
+</td>
+
+<td valign="top">
+
+<sub>Discovered the modern JS ecosystem — never looked back</sub>
+
+
+
+
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="130" align="center" valign="top">
+
+
+
+Universitas PGRI<br/>Semarang<br/><sub>Teknik Informatika</sub>
+
+</td>
+
+<td valign="top">
+
+<sub>Full-stack mode — building & shipping real products in production 🚀</sub>
+
+
+
+
+
+
+
+
+
+
+</td>
+
+</tr>
+
+</table>
+
+
+
+🤝 Let's Connect
+
+<sub>Open to: freelance · collabs · interesting builds · just chatting</sub>
 
 <div align="center">
 
-[![Website](https://img.shields.io/badge/rafifhardjaa.dev-111?style=for-the-badge&logo=safari&logoColor=white)](https://rafifhardjaa.dev)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/rafifhardjaa)
-[![Twitter](https://img.shields.io/badge/Twitter-1D9BF0?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/rafifhardjaa)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rafifhardja@example.com)
-[![TeaMusic](https://img.shields.io/badge/TeaMusic-4ade80?style=for-the-badge&logo=vercel&logoColor=black)](https://teamusic.my.id)
+
+
+
+
+
+
+<br/>
+
+<sub>building things that matter, one commit at a time &nbsp;·&nbsp; <a href="https://teamusic.my.id">teamusic.my.id</a></sub>
 
 </div>
 
----
-
-```ini
-── rafifhardjaa ────────────────────────────────────────────────────
-  building things that matter, one commit at a time
-  teamusic.my.id · github.com/rafifhardjaa · rafifhardjaa.dev
-────────────────────────────────────────────────────────────────────
-```
