@@ -19,7 +19,7 @@
 
 ```ini
 [info]
-location = Indonesia 🇮🇩
+location = Indonesia 
 pronouns = he / him
 status   = open to collabs ✦
 ```
