@@ -1,3 +1,7 @@
+<table>
+<tr>
+<td valign="top" width="38%">
+
 ```
  ██████╗  █████╗ ██████╗      ██╗ █████╗
  ██╔══██╗██╔══██╗██╔══██╗     ██║██╔══██╗
@@ -7,24 +11,36 @@
  ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚════╝ ╚═╝  ╚═╝
 ```
 
+```yaml
+location  : Indonesia
+pronouns  : he / him
+status    : open to collabs ✦
 ```
-╭──────────────────────────────────────────────────────────────────╮
-│                                                                    │
-│   rafifhardjaa@github                                             │
-│   ─────────────────────────────────────────────────────────────  │
-│   OS        macOS · Linux Mint · Android                          │
-│   Role      Full-Stack Developer                                   │
-│   Shell     bun  +  pnpm                                          │
-│   Editor    Neovim / VS Code                                       │
-│   Focus     TypeScript · React · System Design · Web Perf         │
-│   Status    Informatics Engineering Student                        │
-│                                                                    │
-│   now()     Shipping TeaMusic → teamusic.my.id                    │
-│   next()    Rebuilding with Next.js + Drizzle + Spotify API       │
-│   open()    true  // for collabs & interesting problems           │
-│                                                                    │
-╰──────────────────────────────────────────────────────────────────╯
+
+</td>
+<td valign="top">
+
+```js
+// rafifhardjaa@github
+// ──────────────────────────────────────
+
+const user = {
+  OS      : "macOS · Linux Mint · Android",
+  role    : "Full-Stack Developer",
+  shell   : "bun + pnpm",
+  editor  : "Neovim / VS Code",
+  focus   : ["TypeScript", "React", "System Design"],
+  status  : "Informatics Engineering Student",
+}
+
+user.now()   // Shipping TeaMusic → teamusic.my.id
+user.next()  // Next.js + Drizzle ORM + Spotify API
+user.open()  // true — for collabs & interesting problems
 ```
+
+</td>
+</tr>
+</table>
 
 <div align="center">
 
