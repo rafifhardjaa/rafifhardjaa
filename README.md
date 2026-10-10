@@ -19,7 +19,7 @@
 
 ```ini
 [info]
-location = Indonesia 
+location = Indonesia 🇮🇩
 pronouns = he / him
 status   = open to collabs ✦
 ```
@@ -141,6 +141,42 @@ const TeaMusic: Record<"v1" | "v2", Project> = {
 </div>
 
 ---
+
+```gitconfig
+# ── MY JOURNEY ────────────────────────────────────────────────────
+```
+
+```sql
+-- timeline: rafifhardjaa in the IT world
+
+SELECT year, milestone, skills_acquired
+FROM journey
+ORDER BY year ASC;
+
+/*
+┌─────────────┬──────────────────────────────────────────────────────┐
+│    2021     │  Joined SMK Luqman Al Hakim Kudus                    │
+│             │  Major : Rekayasa Perangkat Lunak (RPL)              │
+├─────────────┼──────────────────────────────────────────────────────┤
+│  2021–2022  │  First contact with the web                          │
+│             │  Stack : HTML · CSS · JavaScript · PHP Native        │
+│             │          MySQL · Bootstrap                           │
+├─────────────┼──────────────────────────────────────────────────────┤
+│  2022–2023  │  Went deeper into backend & frameworks               │
+│             │  Stack : Laravel · MVC Architecture · REST APIs      │
+│             │          Git · Linux basics                          │
+├─────────────┼──────────────────────────────────────────────────────┤
+│  2023–2024  │  Graduated · Discovered modern frontend              │
+│             │  Stack : React · TypeScript · Tailwind CSS · Vite    │
+├─────────────┼──────────────────────────────────────────────────────┤
+│  2024–now   │  Mahasiswa Teknik Informatika                        │
+│             │  Univ. PGRI Semarang                                 │
+│             │  Stack : Next.js · Bun · ElysiaJS · Supabase         │
+│             │          Cloudflare Workers · System Design          │
+│             │  Ship  : TeaMusic → teamusic.my.id  🚀               │
+└─────────────┴──────────────────────────────────────────────────────┘
+*/
+```
 
 ```swift
 // ── LET'S CONNECT ─────────────────────────────────────────────────
