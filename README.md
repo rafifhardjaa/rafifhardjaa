@@ -17,30 +17,31 @@
  ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝  ╚════╝ ╚═╝  ╚═╝
 ```
 
-```yaml
-location : Indonesia
-pronouns : he / him
-status   : open to collabs ✦
+```ini
+[info]
+location = Indonesia 🇮🇩
+pronouns = he / him
+status   = open to collabs ✦
 ```
 
 </td>
 <td valign="top">
 
-```yaml
+```properties
 rafifhardjaa@github ────────────────────────────────
 
-OS: ............... macOS · Linux Mint · Android
-Role: ............. Full-Stack Developer
-Shell: ............ bun + pnpm
-Editor: ........... Neovim / VS Code
-Focus: ............ TypeScript · React · System Design
-Status: ........... Informatics Engineering Student
+OS       = macOS · Linux Mint · Android
+Role     = Full-Stack Developer
+Shell    = bun + pnpm
+Editor   = Neovim / VS Code
+Focus    = TypeScript · React · System Design · Web Perf
+Status   = Informatics Engineering Student
 
 ── Now ─────────────────────────────────────────────
 
-now():  ........... Shipping TeaMusic → teamusic.my.id
-next(): ........... Next.js + Drizzle ORM + Spotify API
-open(): ........... true // for collabs & interesting problems
+now()    = Shipping TeaMusic → teamusic.my.id
+next()   = Next.js + Drizzle ORM + Spotify API
+open()   = true // for collabs & interesting problems
 ```
 
 </td>
@@ -60,23 +61,27 @@ open(): ........... true // for collabs & interesting problems
 
 ---
 
-```ts
+```tsx
 // ── PROJECTS ──────────────────────────────────────────────────────
 
-const TeaMusic = {
-  url    : "https://teamusic.my.id",
-  desc   : "Anonymous music messages with a note attached.",
-  detail : "Pick a track. Write a note. Share a story card.\n" +
-           "The recipient opens the link — the song plays.\n" +
-           "Your name never appears.",
+interface Project {
+  url    : string
+  desc   : string
+  status : "LIVE ✓" | "BUILDING ⚡"
+  stack  : string[]
+}
 
+const TeaMusic: Record<"v1" | "v2", Project> = {
   v1: {
+    url    : "https://teamusic.my.id",
+    desc   : "Anonymous music messages with a note attached.",
     status : "LIVE ✓",
     stack  : ["React 19", "TypeScript", "ElysiaJS", "Bun",
               "Tailwind 4", "Supabase", "Cloudflare Workers", "iTunes API"],
   },
-
   v2: {
+    url    : "https://teamusic.my.id",
+    desc   : "Rebuilt with full card export & Spotify integration.",
     status : "BUILDING ⚡",
     stack  : ["Next.js App Router", "Drizzle ORM", "Shadcn UI",
               "Spotify API", "IG Story Export 9:16", "Bun"],
@@ -92,26 +97,24 @@ const TeaMusic = {
 
 ---
 
-```ts
+```diff
 // ── STACK ─────────────────────────────────────────────────────────
 
-const stack = {
-  languages : ["TypeScript", "JavaScript", "Python"],
-  frontend  : ["React", "Next.js", "Tailwind CSS", "Vite"],
-  backend   : ["ElysiaJS", "Bun", "Node.js", "Express"],
-  database  : ["PostgreSQL", "Supabase", "Redis", "Drizzle ORM"],
-  infra     : ["Cloudflare Workers", "Vercel", "Docker", "Git"],
-  editor    : ["Neovim", "VS Code"],
-}
++ Languages   TypeScript   JavaScript   Python
++ Frontend    React        Next.js      Tailwind CSS   Vite   Astro
++ Backend     ElysiaJS     Bun          Node.js        Express
++ Database    PostgreSQL   Supabase     Redis          Drizzle ORM
++ Infra       Cloudflare   Vercel       Docker         Git
+- Learning    System Design · Clean Architecture · Core Web Vitals
 ```
 
 <div align="center">
-<img src="https://skillicons.dev/icons?i=ts,react,nextjs,tailwind,bun,nodejs,postgres,redis,cloudflare,vercel,docker,git&theme=dark&perline=6" />
+<img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,tailwind,vite,bun,nodejs,postgres,redis,cloudflare,vercel&theme=dark&perline=6" />
 </div>
 
 ---
 
-```yaml
+```ini
 ── GitHub Stats ────────────────────────────────────────────────────
 ```
 
@@ -139,17 +142,33 @@ const stack = {
 
 ---
 
-```yaml
-── Contributions ───────────────────────────────────────────────────
+```swift
+// ── LET'S CONNECT ─────────────────────────────────────────────────
+
+let connect = [
+    .website   : "https://rafifhardjaa.dev",
+    .live      : "https://teamusic.my.id",
+    .linkedin  : "linkedin.com/in/rafifhardjaa",
+    .twitter   : "twitter.com/rafifhardjaa",
+    .email     : "rafifhardja@example.com",
+]
+
+// Open to: freelance · collabs · interesting builds · just chatting
 ```
 
 <div align="center">
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=rafifhardjaa&bg_color=0d1117&color=58a6ff&line=58a6ff&point=e6edf3&area=true&area_color=161b22&hide_border=true&radius=4&font_color=8b949e" />
+
+[![Website](https://img.shields.io/badge/rafifhardjaa.dev-111?style=for-the-badge&logo=safari&logoColor=white)](https://rafifhardjaa.dev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/rafifhardjaa)
+[![Twitter](https://img.shields.io/badge/Twitter-1D9BF0?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/rafifhardjaa)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rafifhardja@example.com)
+[![TeaMusic](https://img.shields.io/badge/TeaMusic-4ade80?style=for-the-badge&logo=vercel&logoColor=black)](https://teamusic.my.id)
+
 </div>
 
 ---
 
-```yaml
+```ini
 ── rafifhardjaa ────────────────────────────────────────────────────
   building things that matter, one commit at a time
   teamusic.my.id · github.com/rafifhardjaa · rafifhardjaa.dev
