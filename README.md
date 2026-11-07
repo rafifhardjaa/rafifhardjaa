@@ -5,10 +5,16 @@
 # Rafif Hardja
 
 Informatics Engineering Student · Full-Stack Developer · Indonesia
-
-Open to interesting problems
+<sub>Open to interesting problems</sub>
 
 ---
+
+<div align="center">
+
+<!-- Divider -->
+<span style="display:inline-block;width:100%;height:1px;background:linear-gradient(90 transparent, #58a6ff, transparent);margin:1.5em 0;"></span>
+
+</div>
 
 [![Live](https://img.shields.io/badge/teamusic.my.id-4ade80?style=flat-square&labelColor=161b22&color=4ade80)](https://teamusic.my.id)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-161b22?style=flat-square&logo=linkedin&logoColor=58a6ff)](https://linkedin.com/in/rafifhardjaa)
@@ -70,6 +76,15 @@ Focus: TypeScript, React, System Design, Web Performance.
 ---
 
 <div align="center">
+
+<!-- Subtle accent circle -->
+<div style="display:inline-block;margin:1.5em 0;">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,40:0f2027,100:0d1117&height=60&section=header&text=Built+with+passion&fontSize=20&fontColor=58a6ff&animation=fadeIn&fontAlignY=55&stroke=58a6ff&strokeWidth=1" alt="Built with passion" />
+</div>
+
+</div>
+
+---
 
 [![Website](https://img.shields.io/badge/rafifhardjaa.dev-111?style=for-the-badge&logo=safari&logoColor=white)](https://rafifhardjaa.dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/rafifhardjaa)
