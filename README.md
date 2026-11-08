@@ -69,6 +69,15 @@ Open to interesting problems.
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rafifhardjaa&layout=compact&theme=github_dark&hide_border=true&langs_count=6&bg_color=111111&title_color=ffffff&text_color=cccccc" width="100%" style="border:1px solid #000;display:block;background:#000;" alt="Top languages for rafifhardjaa"/>
 </div>
 
+<div style="border:1px solid #000;background:#0d1117;padding:1rem;margin:1.5rem 0;text-align:center;">
+<p style="margin:0 0 0.75rem 0;font-weight:bold;text-transform:uppercase;font-family:ui-monospace,monospace;font-size:0.875rem;color:#fff;">contributions</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rafifhardjaa/rafifhardjaa/output/github-snake-glow.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rafifhardjaa/rafifhardjaa/output/github-snake.svg" />
+  <img src="https://raw.githubusercontent.com/rafifhardjaa/rafifhardjaa/output/github-snake-glow.svg" alt="Contribution grid snake animation for rafifhardjaa" style="width:100%;filter:drop-shadow(0 0 6px #58a6ff);" />
+</picture>
+</div>
+
 <div style="border:1px solid #000;background:#fff;padding:1.5rem;margin:1.5rem 0;">
 <p style="margin:0 0 0.75rem 0;font-weight:bold;text-transform:uppercase;font-family:ui-monospace,monospace;font-size:0.875rem;color:#000;">background</p>
 <p style="margin:0.5rem 0;font-family:ui-monospace,monospace;color:#333;font-size:0.875rem;line-height:1.5;">SMK Luqman Al Hakim Kudus (2021-2024, Rekayasa Perangkat Lunak)</p>
