@@ -4,13 +4,13 @@
 Open to interesting problems.
 
 <div style="border:2px solid #000;background:#111;padding:1.5rem;margin:1.5rem 0;overflow-x:auto;">
-<pre aria-hidden="true" style="margin:0;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:0.75rem;line-height:1.05;color:#fff;letter-spacing:0.05em;">
-██████╗  █████╗ ███████╗██╗███████╗
-██╔══██╗██╔══██╗██╔════╝██║██╔════╝
-██████╔╝███████║█████╗  ██║█████╗
-██╔══██╗██╔══██║██╔══╝  ██║██╔══╝
-██║  ██║██║  ██║██║     ██║██║
-╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝
+<pre aria-hidden="true" style="margin:0;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:0.6rem;line-height:1.05;color:#fff;letter-spacing:0.05em;">
+██╗      █████╗ ███████╗██╗   ██╗ ██████╗ ██████╗ ██████╗ ██╗██╗  ██╗
+██║     ██╔══██╗╚══███╔╝╚██╗ ██╔╝██╔════╝██╔═══██╗██╔══██╗██║╚██╗██╔╝
+██║     ███████║  ███╔╝  ╚████╔╝ ██║     ██║   ██║██║  ██║██║ ╚███╔╝
+██║     ██╔══██║ ███╔╝    ╚██╔╝  ██║     ██║   ██║██║  ██║██║ ██╔██╗
+███████╗██║  ██║███████╗   ██║   ╚██████╗╚██████╔╝██████╔╝██║██╔╝ ██╗
+╚══════╝╚═╝  ╚═╝╚══════╝   ╚═╝    ╚═════╝ ╚═════╝ ╚═════╝ ╚═╝╚═╝  ╚═╝
 </pre>
 <p style="margin:1rem 0 0 0;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:0.75rem;color:#888;">// full-stack developer · indonesia · open to collabs</p>
 </div>
@@ -45,6 +45,10 @@ Open to interesting problems.
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
 <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
 <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
+<img src="https://img.shields.io/badge/Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white" alt="Svelte" />
+<img src="https://img.shields.io/badge/SvelteKit-FF3E00?style=flat-square&logo=svelte&logoColor=white" alt="SvelteKit" />
+<img src="https://img.shields.io/badge/Astro-FF5D01?style=flat-square&logo=astro&logoColor=white" alt="Astro" />
+<img src="https://img.shields.io/badge/ElysiaJS-000000?style=flat-square&logoColor=white" alt="ElysiaJS" />
 <img src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
 <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
 <img src="https://img.shields.io/badge/Bun-000000?style=flat-square&logo=bun&logoColor=white" alt="Bun" />
