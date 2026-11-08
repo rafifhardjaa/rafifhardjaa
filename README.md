@@ -1,6 +1,5 @@
-# rafifhardjaa
 
-**Informatics Engineering Student** · Full-Stack Developer · Indonesia
+**Informatics Engineering Student** · Full-Stack Developer And Full-Stack Learner · Indonesia
 
 Open to interesting problems.
 
@@ -86,5 +85,5 @@ Open to interesting problems.
 </div>
 
 <div style="text-align:center;font-family:ui-monospace,monospace;font-size:0.75rem;color:#666;margin-top:1rem;border-top:1px solid #000;padding-top:1rem;">
-rafifhardjaa · teamusic.my.id · github.com/rafifhardjaa · rafifhardjaa.dev
+rafifhardjaa · teamusic.my.id · github.com/rafifhardjaa · rafifhardja.xyz
 </div>
