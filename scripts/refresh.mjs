@@ -185,13 +185,27 @@ export async function main() {
   if (await writeFileIfChanged(join(root, "assets/tape.svg"), tape)) changed.push("assets/tape.svg");
 
   let equalizer = null;
+  let jcard = null;
   try {
     const calendar = await fetchJson(
       `https://github-contributions-api.jogruber.de/v4/${user}?y=last`,
     );
-    equalizer = renderEqualizerSvg(weeksFromContributions(calendar.contributions));
+    const weeks = weeksFromContributions(calendar.contributions);
+    const nonFork = repos.filter((repo) => !repo.fork);
+    equalizer = renderEqualizerSvg(weeks);
+    jcard = renderJCardSvg({
+      repos: nonFork.length,
+      stars: nonFork.reduce((sum, repo) => sum + repo.stargazers_count, 0),
+      contributions: weeks.total,
+      longest: weeks.longest,
+      followers: profile.followers,
+      year: new Date().getFullYear(),
+    });
   } catch (error) {
-    console.warn(`contributions unavailable, keeping existing equalizer: ${error.message}`);
+    console.warn(`contributions unavailable, keeping existing equalizer and j-card: ${error.message}`);
+  }
+  if (jcard && (await writeFileIfChanged(join(root, "assets/jcard.svg"), jcard))) {
+    changed.push("assets/jcard.svg");
   }
   if (
     equalizer &&
