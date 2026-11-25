@@ -4,6 +4,8 @@ import {
   weeksFromContributions,
   selectTracks,
   escapeXml,
+  renderEqualizerSvg,
+  renderTapeSvg,
 } from "./refresh.mjs";
 
 test("weeksFromContributions buckets 364 days into 52 bars ending today", () => {
@@ -34,4 +36,25 @@ test("selectTracks drops forks and the profile repo, sorts by stars, limits", ()
 
 test("escapeXml escapes markup characters", () => {
   assert.equal(escapeXml(`a & b <c> "d"`), "a &amp; b &lt;c&gt; &quot;d&quot;");
+});
+
+test("equalizer renders one bar per week plus the total", () => {
+  const svg = renderEqualizerSvg({ bars: Array(52).fill(3), total: 156 });
+  assert.match(svg, /^<svg xmlns="http:\/\/www\.w3\.org\/2000\/svg"/);
+  assert.equal((svg.match(/<rect /g) || []).length, 52);
+  assert.match(svg, /156 plays/);
+});
+
+test("tape renders side, name and now playing", () => {
+  const svg = renderTapeSvg({
+    name: "Abdurrahman Rafif",
+    side: "TypeScript",
+    year: 2026,
+    nowPlaying: "LMS",
+    stars: 2,
+  });
+  assert.match(svg, /SIDE A/);
+  assert.match(svg, /Abdurrahman Rafif/);
+  assert.match(svg, /LMS/);
+  assert.doesNotMatch(svg, /undefined/);
 });
