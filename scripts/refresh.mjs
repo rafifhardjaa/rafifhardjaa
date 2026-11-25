@@ -211,3 +211,49 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
     process.exitCode = 1;
   });
 }
+
+const J_CARD_BARCODE = [
+  3, 1, 2, 1, 3, 1, 1, 2, 1, 3, 2, 1, 1, 3, 1, 2, 2, 1, 3, 1, 2, 1, 1, 2,
+];
+
+function statText(value, suffix = "") {
+  return Number.isFinite(value) ? `${value}${suffix}` : "—";
+}
+
+export function renderJCardSvg(
+  { repos, stars, contributions, longest, followers, year },
+  { width = 880, height = 200 } = {},
+) {
+  const stats = [
+    [statText(repos), "REPOS"],
+    [statText(stars), "STARS"],
+    [statText(contributions), "CONTRIBUTIONS"],
+    [statText(longest, "d"), "STREAK"],
+    [statText(followers), "FOLLOWERS"],
+  ];
+
+  const values = stats
+    .map(([value, label], i) => {
+      const x = 40 + i * 132;
+      return `<text x="${x}" y="112" font-family="${MONO}" font-size="28" font-weight="700" fill="#f4e8d0">${escapeXml(value)}</text>
+<text x="${x}" y="136" font-family="${MONO}" font-size="10" letter-spacing="1" fill="#8b949e">${escapeXml(label)}</text>`;
+    })
+    .join("\n");
+
+  let barX = 745;
+  const barcode = J_CARD_BARCODE.map((barWidth) => {
+    const bar = `<rect x="${barX}" y="70" width="${barWidth}" height="80" fill="#f4e8d0" opacity="0.85"/>`;
+    barX += barWidth + 2;
+    return bar;
+  }).join("");
+
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="${width}" height="${height}" role="img">
+<title>${escapeXml(`${statText(repos)} repositories, ${statText(stars)} stars, ${statText(contributions)} contributions, longest streak ${statText(longest, " days")}, ${statText(followers)} followers`)}</title>
+<rect x="8" y="8" width="864" height="184" rx="14" fill="#161b22" stroke="#30363d"/>
+<text x="40" y="44" font-family="${MONO}" font-size="10" letter-spacing="2" fill="#8b949e">PRESSING DETAILS</text>
+${values}
+<line x1="716" y1="70" x2="716" y2="150" stroke="#30363d"/>
+${barcode}
+<text x="40" y="176" font-family="${MONO}" font-size="10" fill="#8b949e">${escapeXml(`mastered in semarang · ${statText(year)}`)}</text>
+</svg>`;
+}

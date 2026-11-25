@@ -8,6 +8,7 @@ import {
   renderTapeSvg,
   renderTracklist,
   replaceBlock,
+  renderJCardSvg,
 } from "./refresh.mjs";
 
 test("weeksFromContributions buckets 364 days into 52 bars ending today", () => {
@@ -79,4 +80,22 @@ test("replaceBlock keeps surrounding text and is idempotent", () => {
 
 test("replaceBlock throws when markers are missing", () => {
   assert.throws(() => replaceBlock("no markers", "x"), /TRACKLIST markers/);
+});
+
+test("jcard prints every stat and never undefined", () => {
+  const svg = renderJCardSvg({
+    repos: 28, stars: 15, contributions: 454, longest: 9, followers: 12, year: 2026,
+  });
+  assert.match(svg, /^<svg xmlns="http:\/\/www\.w3\.org\/2000\/svg"/);
+  for (const value of [">28<", ">15<", ">454<", ">9d<", ">12<"]) {
+    assert.ok(svg.includes(value), `missing ${value}`);
+  }
+  assert.match(svg, /2026/);
+  assert.doesNotMatch(svg, /undefined|NaN/);
+});
+
+test("jcard degrades to an em dash instead of NaN", () => {
+  const svg = renderJCardSvg({ repos: 0, stars: 0, contributions: 0, longest: 0, followers: 0, year: 2026 });
+  assert.doesNotMatch(svg, /NaN|undefined/);
+  assert.match(svg, />0</);
 });
