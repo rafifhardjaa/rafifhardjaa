@@ -6,6 +6,8 @@ import {
   escapeXml,
   renderEqualizerSvg,
   renderTapeSvg,
+  renderTracklist,
+  replaceBlock,
 } from "./refresh.mjs";
 
 test("weeksFromContributions buckets 364 days into 52 bars ending today", () => {
@@ -57,4 +59,24 @@ test("tape renders side, name and now playing", () => {
   assert.match(svg, /Abdurrahman Rafif/);
   assert.match(svg, /LMS/);
   assert.doesNotMatch(svg, /undefined/);
+});
+
+test("renderTracklist numbers tracks and shows stars and language", () => {
+  const md = renderTracklist([
+    { name: "LMS", url: "u/lms", stars: 2, language: "TypeScript" },
+    { name: "Al-amin", url: "u/al", stars: 2, language: "SCSS" },
+  ]);
+  assert.match(md, /^01\. \*\*\[LMS\]\(u\/lms\)\*\* — ★ 2 · TypeScript$/m);
+  assert.match(md, /^02\. /m);
+});
+
+test("replaceBlock keeps surrounding text and is idempotent", () => {
+  const src = "a\n<!-- TRACKLIST:START -->\nold\n<!-- TRACKLIST:END -->\nz";
+  const once = replaceBlock(src, "new");
+  assert.equal(once, "a\n<!-- TRACKLIST:START -->\nnew\n<!-- TRACKLIST:END -->\nz");
+  assert.equal(replaceBlock(once, "new"), once);
+});
+
+test("replaceBlock throws when markers are missing", () => {
+  assert.throws(() => replaceBlock("no markers", "x"), /TRACKLIST markers/);
 });

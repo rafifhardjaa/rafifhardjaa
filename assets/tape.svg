@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 320" width="880" height="320" role="img">
+<title>AbdurrahmanRafif — mixtape, side A TypeScript</title>
+<rect x="8" y="8" width="864" height="304" rx="18" fill="#161b22" stroke="#30363d"/>
+<rect x="40" y="56" width="800" height="208" rx="12" fill="#f4e8d0"/>
+<circle cx="24" cy="24" r="3" fill="#30363d"/>
+<circle cx="856" cy="24" r="3" fill="#30363d"/>
+<circle cx="24" cy="296" r="3" fill="#30363d"/>
+<circle cx="856" cy="296" r="3" fill="#30363d"/>
+<text x="64" y="92" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="2" fill="#1b1b1b" opacity="0.65">SIDE A · TypeScript</text>
+<text x="816" y="92" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#1b1b1b" opacity="0.65">2026</text>
+<text x="64" y="140" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="30" font-weight="700" fill="#1b1b1b">AbdurrahmanRafif</text>
+<text x="64" y="166" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#1b1b1b" opacity="0.65">greatest hits</text>
+<rect x="668" y="130" width="92" height="4" fill="#1b1b1b"/>
+<circle cx="668" cy="132" r="34" fill="#0d1117" stroke="#1b1b1b" stroke-width="2"/>
+<circle cx="668" cy="132" r="10" fill="#f4e8d0"/>
+<circle cx="760" cy="132" r="34" fill="#0d1117" stroke="#1b1b1b" stroke-width="2"/>
+<circle cx="760" cy="132" r="10" fill="#f4e8d0"/>
+<rect x="64" y="196" width="752" height="44" rx="8" fill="#1b1b1b"/>
+<text x="84" y="224" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#f4e8d0">▶ NOW PLAYING · LMS · ★ 2</text>
+</svg>

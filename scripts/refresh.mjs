@@ -1,3 +1,7 @@
+import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { fileURLToPath, pathToFileURL } from "node:url";
+import { dirname, join } from "node:path";
+
 export function weeksFromContributions(days, weeks = 52) {
   const slice = days.slice(-weeks * 7);
   const bars = [];
@@ -60,8 +64,9 @@ export function renderEqualizerSvg({ bars, total }, { width = 880, height = 140 
 
   const rects = bars
     .map((count, i) => {
-      const h = 4 + Math.round((count / max) * maxHeight);
-      const opacity = (0.45 + 0.55 * (count / max)).toFixed(2);
+      const ratio = Math.sqrt(count / max);
+      const h = 4 + Math.round(ratio * maxHeight);
+      const opacity = (0.45 + 0.55 * ratio).toFixed(2);
       const x = 16 + i * (barWidth + gap);
       return `<rect x="${x}" y="${baseline - h}" width="${barWidth}" height="${h}" rx="2" fill="#ff7a45" opacity="${opacity}"/>`;
     })
@@ -99,4 +104,110 @@ export function renderTapeSvg(
 <rect x="64" y="196" width="752" height="44" rx="8" fill="#1b1b1b"/>
 <text x="84" y="224" font-family="${MONO}" font-size="13" fill="#f4e8d0">${escapeXml(`▶ NOW PLAYING · ${nowPlaying} · ★ ${stars}`)}</text>
 </svg>`;
+}
+
+const TRACKLIST_START = "<!-- TRACKLIST:START -->";
+const TRACKLIST_END = "<!-- TRACKLIST:END -->";
+
+export function renderTracklist(tracks) {
+  return tracks
+    .map(
+      (track, i) =>
+        `${String(i + 1).padStart(2, "0")}. **[${track.name}](${track.url})** — ★ ${track.stars} · ${track.language}`,
+    )
+    .join("\n");
+}
+
+export function replaceBlock(source, body) {
+  const start = source.indexOf(TRACKLIST_START);
+  const end = source.indexOf(TRACKLIST_END);
+  if (start === -1 || end === -1 || end < start) {
+    throw new Error("README is missing TRACKLIST markers");
+  }
+  return `${source.slice(0, start + TRACKLIST_START.length)}\n${body}\n${source.slice(end)}`;
+}
+
+async function writeFileIfChanged(path, content) {
+  const previous = await readFile(path, "utf8").catch(() => null);
+  if (previous === content) return false;
+  await mkdir(dirname(path), { recursive: true });
+  await writeFile(path, content);
+  return true;
+}
+
+async function fetchJson(url, token) {
+  const response = await fetch(url, {
+    headers: {
+      accept: "application/vnd.github+json",
+      "user-agent": "rafifhardjaa-readme-refresh",
+      ...(token ? { authorization: `Bearer ${token}` } : {}),
+    },
+  });
+  if (!response.ok) throw new Error(`${response.status} ${response.statusText} · ${url}`);
+  return response.json();
+}
+
+function topLanguage(tracks) {
+  const counts = new Map();
+  for (const track of tracks) {
+    if (track.language === "—") continue;
+    counts.set(track.language, (counts.get(track.language) ?? 0) + 1);
+  }
+  return [...counts].sort((a, b) => b[1] - a[1])[0]?.[0] ?? "code";
+}
+
+export async function main() {
+  const user = process.env.GH_USER ?? "rafifhardjaa";
+  const token = process.env.GITHUB_TOKEN;
+  const root = fileURLToPath(new URL("../", import.meta.url));
+
+  const [profile, repos] = await Promise.all([
+    fetchJson(`https://api.github.com/users/${user}`, token),
+    fetchJson(`https://api.github.com/users/${user}/repos?per_page=100&sort=updated`, token),
+  ]);
+
+  const tracks = selectTracks(repos, { user, limit: 8 });
+  const top = tracks[0];
+
+  const tape = renderTapeSvg({
+    name: profile.name || user,
+    side: topLanguage(tracks),
+    year: new Date().getFullYear(),
+    nowPlaying: top?.name ?? "nothing yet",
+    stars: top?.stars ?? 0,
+  });
+
+  const readmePath = join(root, "README.md");
+  const readme = await readFile(readmePath, "utf8");
+  const nextReadme = replaceBlock(readme, renderTracklist(tracks));
+
+  const changed = [];
+  if (await writeFileIfChanged(join(root, "assets/tape.svg"), tape)) changed.push("assets/tape.svg");
+
+  let equalizer = null;
+  try {
+    const calendar = await fetchJson(
+      `https://github-contributions-api.jogruber.de/v4/${user}?y=last`,
+    );
+    equalizer = renderEqualizerSvg(weeksFromContributions(calendar.contributions));
+  } catch (error) {
+    console.warn(`contributions unavailable, keeping existing equalizer: ${error.message}`);
+  }
+  if (
+    equalizer &&
+    (await writeFileIfChanged(join(root, "assets/equalizer.svg"), equalizer))
+  ) {
+    changed.push("assets/equalizer.svg");
+  }
+
+  if (await writeFileIfChanged(readmePath, nextReadme)) changed.push("README.md");
+
+  console.log(changed.length ? `updated ${changed.join(", ")}` : "no changes");
+}
+
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((error) => {
+    console.error(error.message);
+    process.exitCode = 1;
+  });
 }
