@@ -2,7 +2,7 @@
   <img src="assets/tape.svg" width="100%" alt="Cassette tape: side A, Abdurrahman Rafif, greatest hits">
 </p>
 
-**Abdurrahman Rafif** — informatics engineering student in Semarang, Indonesia. I build web apps with TypeScript.
+Informatics engineering student in Semarang, Indonesia. I build web apps with TypeScript.
 
 `LINER NOTES`
 
@@ -10,7 +10,7 @@ Studying informatics engineering at Universitas PGRI Semarang since 2024, after 
 
 `TRACKLIST`
 
-Most-starred repositories. Sorted by stars, rebuilt weekly.
+Most-starred repositories, rebuilt every Monday.
 
 <!-- TRACKLIST:START -->
 01. **[LMS](https://github.com/rafifhardjaa/LMS)** — ★ 2 · TypeScript
