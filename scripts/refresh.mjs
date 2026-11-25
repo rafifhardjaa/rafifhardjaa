@@ -74,8 +74,14 @@ export function renderEqualizerSvg({ bars, total }, { width = 880, height = 140 
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="${width}" height="${height}" role="img">
 <title>${escapeXml(`${bars.length} weeks of contributions · ${total} plays`)}</title>
+<style>
+@keyframes sweep { from { transform: translateX(0); } to { transform: translateX(826px); } }
+.playhead-track { transform-box: view-box; animation: sweep 14s linear infinite; }
+@media (prefers-reduced-motion: reduce) { .playhead-track { animation: none; } }
+</style>
 <text x="${width - 16}" y="20" text-anchor="end" font-family="${MONO}" font-size="12" fill="#6e7681">${escapeXml(`52 weeks · ${total} plays`)}</text>
 ${rects}
+<g class="playhead-track"><line x1="16" y1="34" x2="16" y2="118" stroke="#8b949e" stroke-width="1" opacity="0.6"/></g>
 <line x1="16" y1="${baseline + 1}" x2="${width - 16}" y2="${baseline + 1}" stroke="#30363d" stroke-width="1"/>
 </svg>`;
 }
@@ -86,6 +92,13 @@ export function renderTapeSvg(
 ) {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="${width}" height="${height}" role="img">
 <title>${escapeXml(`${name} — mixtape, side A ${side}`)}</title>
+<style>
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.2; } }
+.reel { transform-box: view-box; transform-origin: 0 0; animation: spin 9s linear infinite; }
+.dot { animation: pulse 2s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .reel, .dot { animation: none; } }
+</style>
 <rect x="8" y="8" width="864" height="304" rx="18" fill="#161b22" stroke="#30363d"/>
 <rect x="40" y="56" width="800" height="208" rx="12" fill="#f4e8d0"/>
 <circle cx="24" cy="24" r="3" fill="#30363d"/>
@@ -96,12 +109,21 @@ export function renderTapeSvg(
 <text x="816" y="92" text-anchor="end" font-family="${MONO}" font-size="12" fill="#1b1b1b" opacity="0.65">${escapeXml(year)}</text>
 <text x="64" y="140" font-family="${MONO}" font-size="30" font-weight="700" fill="#1b1b1b">${escapeXml(name)}</text>
 <text x="64" y="166" font-family="${MONO}" font-size="13" fill="#1b1b1b" opacity="0.65">greatest hits</text>
-<rect x="668" y="130" width="92" height="4" fill="#1b1b1b"/>
-<circle cx="668" cy="132" r="34" fill="#0d1117" stroke="#1b1b1b" stroke-width="2"/>
-<circle cx="668" cy="132" r="10" fill="#f4e8d0"/>
-<circle cx="760" cy="132" r="34" fill="#0d1117" stroke="#1b1b1b" stroke-width="2"/>
-<circle cx="760" cy="132" r="10" fill="#f4e8d0"/>
+<line x1="668" y1="132" x2="760" y2="132" stroke="#1b1b1b" stroke-width="4"/>
+<g transform="translate(668 132)"><g class="reel">
+<circle r="34" fill="#0d1117" stroke="#1b1b1b" stroke-width="2"/>
+<circle cx="20" r="2.5" fill="#f4e8d0"/><circle cy="20" r="2.5" fill="#f4e8d0"/>
+<circle cx="-20" r="2.5" fill="#f4e8d0"/><circle cy="-20" r="2.5" fill="#f4e8d0"/>
+<circle r="10" fill="#f4e8d0"/>
+</g></g>
+<g transform="translate(760 132)"><g class="reel">
+<circle r="34" fill="#0d1117" stroke="#1b1b1b" stroke-width="2"/>
+<circle cx="20" r="2.5" fill="#f4e8d0"/><circle cy="20" r="2.5" fill="#f4e8d0"/>
+<circle cx="-20" r="2.5" fill="#f4e8d0"/><circle cy="-20" r="2.5" fill="#f4e8d0"/>
+<circle r="10" fill="#f4e8d0"/>
+</g></g>
 <rect x="64" y="196" width="752" height="44" rx="8" fill="#1b1b1b"/>
+<circle class="dot" cx="74" cy="219" r="3" fill="#ff7a45"/>
 <text x="84" y="224" font-family="${MONO}" font-size="13" fill="#f4e8d0">${escapeXml(`▶ NOW PLAYING · ${nowPlaying} · ★ ${stars}`)}</text>
 </svg>`;
 }

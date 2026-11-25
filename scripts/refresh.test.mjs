@@ -99,3 +99,17 @@ test("jcard degrades to an em dash instead of NaN", () => {
   assert.doesNotMatch(svg, /NaN|undefined/);
   assert.match(svg, />0</);
 });
+
+test("tape reels animate and respect reduced motion", () => {
+  const svg = renderTapeSvg({ name: "A", side: "TypeScript", year: 2026, nowPlaying: "LMS", stars: 2 });
+  assert.match(svg, /@keyframes spin/);
+  assert.match(svg, /prefers-reduced-motion: reduce/);
+  assert.match(svg, /class="reel"/);
+});
+
+test("equalizer playhead sweeps and respects reduced motion", () => {
+  const svg = renderEqualizerSvg({ bars: Array(52).fill(3), total: 156 });
+  assert.match(svg, /@keyframes sweep/);
+  assert.match(svg, /prefers-reduced-motion: reduce/);
+  assert.equal((svg.match(/<rect /g) || []).length, 52);
+});
